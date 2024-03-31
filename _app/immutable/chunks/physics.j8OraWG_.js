@@ -1,1 +1,0 @@
-function e(m,x){if(x<0){m.mx*=-1,m.my*=-1;let y=e(m,-x);return m.mx*=-1,m.my*=-1,y.mx*=-1,y.my*=-1,y}return{x:m.mx*x+m.x,y:m.my*x+Math.pow(x,2)/2*350+m.y,mx:m.mx,my:m.my+x*350}}globalThis._e=e;export{e as g};
