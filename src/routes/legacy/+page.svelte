@@ -116,9 +116,6 @@
         console.log(playing);
         currentTick = 0;
         previousMicrosecond = performance.now() * 1000;
-        import("$lib/visualisers/worker?worker").then(worker => new worker.default({
-            name: "cheese"
-        }).terminate());
         setInterval(process, 1);
     }
 

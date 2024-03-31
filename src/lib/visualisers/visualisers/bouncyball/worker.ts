@@ -1,4 +1,4 @@
-import Reader, {type MIDIEvent} from "$lib/MidiReader";
+import Reader from "$lib/MidiReader";
 import getSnapshot from "./physics";
 
 export default function(data: any, progress: (progress: number | null, action: string) => void) {

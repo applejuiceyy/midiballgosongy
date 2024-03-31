@@ -18,6 +18,7 @@ self.addEventListener("message", function(event: any) {
         case "cancel":
             cancelledTickets.add(data.ticket);
             break;
+            default: break;
     }
 })
 

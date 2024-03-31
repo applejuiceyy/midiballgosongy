@@ -2,7 +2,6 @@
 
     import { onMount } from 'svelte';
     import renderer from "./renderer";
-    import soundfont from "$lib/soundfont.sf2?url";
 
     export let data: BallTrack[];
     export let midi: string;
@@ -13,10 +12,10 @@
         player.start();
         let ev = () => {
             player.stop();
-            player.removeEventListener("load", ev)
+            player.removeEventListener("load", ev);
             renderer(canvas, player, data);
         }
-        player.addEventListener("load", ev)
+        player.addEventListener("load", ev);
     })
 </script>
 

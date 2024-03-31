@@ -1,4 +1,5 @@
 import type { O2WMessage, W2OLongHaulRequest } from "./worker-types";
+import workerUrl from "./work.ts?url";
 import things from "./glob";
 
 type DistributiveOmit<T, K extends keyof any> = T extends any
@@ -65,7 +66,7 @@ class WorkerWrapper {
 }
 
 export async function constructWorker() {
-    return new WorkerWrapper(new Worker(new URL("./worker.ts", import.meta.url), {
+    return new WorkerWrapper(new Worker(workerUrl, {
         name: "visualiser worker",
         type: "module"
     }));
