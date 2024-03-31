@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+
+
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.3al3Ltio.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.wdSQypNi.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.uVnGMUD5.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.L1dbb07u.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.0HuHagjb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.xYm5eRWn.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.z3-2u1Uw.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.Z4UQO9XE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/main.gADFQzQ8.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <label>Input midi file <input type="file" accept="audio/midi"></label>   0 <svg width="10000" height="1000"></svg>   
+			
+			<script>
+				{
+					__sveltekit_cyhc1l = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.3al3Ltio.js"),
+						import("./_app/immutable/entry/app.L1dbb07u.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
