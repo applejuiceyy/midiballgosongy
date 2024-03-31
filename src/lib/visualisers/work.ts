@@ -4,7 +4,7 @@
 /// <reference lib="webworker" />
 
 import type {W2OMessage, W2OLongHaulRequest} from "./worker-types.js";
-import things from "./glob";
+import things from "./workerglob";
 
 let cancelledTickets = new Set();
 
